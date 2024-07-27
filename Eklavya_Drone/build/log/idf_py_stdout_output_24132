@@ -1,0 +1,489 @@
+[1/11] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D C:\Users\ameya\Desktop\Eklavya_Drone\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.1.2/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 C:/Users/ameya/Desktop/Eklavya_Drone/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6810 bytes. 0x7f0 bytes (7%) free.
+[2/9] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/main.cpp.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/main.cpp.obj 
+ccache C:\Espressif\tools\xtensa-esp32-elf\esp-12.2.0_20230208\xtensa-esp32-elf\bin\xtensa-esp32-elf-g++.exe -DESP_PLATFORM -DIDF_VER=\"v5.1.2-dirty\" -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DUNITY_INCLUDE_CONFIG_H -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -IC:/Users/ameya/Desktop/Eklavya_Drone/build/config -IC:/Users/ameya/Desktop/Eklavya_Drone/main/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/newlib/platform_include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/esp_additions/include/freertos -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/esp_additions/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/esp_additions/arch/xtensa/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_hw_support/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_hw_support/include/soc -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_hw_support/include/soc/esp32 -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_hw_support/port/esp32/. -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_hw_support/port/esp32/private_include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/heap/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/log/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/soc/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/soc/esp32 -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/soc/esp32/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/hal/esp32/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/hal/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/hal/platform_port/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_rom/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_rom/include/esp32 -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_rom/esp32 -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_common/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/port/soc -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/port/include/private -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/xtensa/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/xtensa/esp32/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/lwip/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/lwip/include/apps -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/lwip/include/apps/sntp -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/lwip/lwip/src/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/lwip/port/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/lwip/port/freertos/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/lwip/port/esp32xx/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/lwip/port/esp32xx/include/arch -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_ringbuf/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/efuse/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/efuse/esp32/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/driver/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/driver/deprecated -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/driver/analog_comparator/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/driver/dac/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/driver/gpio/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/driver/gptimer/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/driver/i2c/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/driver/i2s/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/driver/ledc/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/driver/mcpwm/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/driver/parlio/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/driver/pcnt/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/driver/rmt/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/driver/sdio_slave/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/driver/sdmmc/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/driver/sigma_delta/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/driver/spi/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/driver/temperature_sensor/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/driver/touch_sensor/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/driver/twai/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/driver/uart/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/driver/usb_serial_jtag/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/driver/touch_sensor/esp32/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_pm/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/mbedtls/port/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/mbedtls/mbedtls/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/mbedtls/mbedtls/library -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/mbedtls/esp_crt_bundle/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/mbedtls/mbedtls/3rdparty/everest/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/mbedtls/mbedtls/3rdparty/p256-m -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/mbedtls/mbedtls/3rdparty/p256-m/p256-m -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_app_format/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/bootloader_support/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/bootloader_support/bootloader_flash/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_partition/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/app_update/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_mm/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/spi_flash/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/pthread/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_timer/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/app_trace/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_event/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/nvs_flash/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_phy/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_phy/esp32/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/vfs/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_netif/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/wpa_supplicant/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/wpa_supplicant/port/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/wpa_supplicant/esp_supplicant/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_coex/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_wifi/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_wifi/wifi_apps/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/unity/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/unity/unity/src -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/cmock/CMock/src -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/console -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/http_parser -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp-tls -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp-tls/esp-tls-crypto -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_adc/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_adc/interface -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_adc/esp32/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_adc/deprecated/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_eth/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_gdbstub/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_hid/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/tcp_transport/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_http_client/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_http_server/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_https_ota/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_psram/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_lcd/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_lcd/interface -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/protobuf-c/protobuf-c -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/protocomm/include/common -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/protocomm/include/security -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/protocomm/include/transports -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_local_ctrl/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/espcoredump/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/espcoredump/include/port/xtensa -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/wear_levelling/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/sdmmc/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/fatfs/diskio -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/fatfs/vfs -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/fatfs/src -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/idf_test/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/idf_test/include/esp32 -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/ieee802154/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/json/cJSON -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/mqtt/esp-mqtt/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/perfmon/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/spiffs/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/wifi_provisioning/include -mlongcalls -Wno-frame-address  -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fmacro-prefix-map=C:/Users/ameya/Desktop/Eklavya_Drone=. -fmacro-prefix-map=C:/Espressif/frameworks/esp-idf-v5.1.2=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -DconfigENABLE_FREERTOS_DEBUG_OCDAWARE=1 -std=gnu++2b -fno-exceptions -fno-rtti -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/main.cpp.obj -MF esp-idf\main\CMakeFiles\__idf_main.dir\main.cpp.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/main.cpp.obj -c C:/Users/ameya/Desktop/Eklavya_Drone/main/main.cpp
+In file included from C:/Users/ameya/Desktop/Eklavya_Drone/main/main.cpp:4:
+C:/Users/ameya/Desktop/Eklavya_Drone/main/include/DShotRMT.h:36:9: error: 'rmt_item32_t' does not name a type
+   36 |         rmt_item32_t _dshotCmd[17];
+      |         ^~~~~~~~~~~~
+C:/Users/ameya/Desktop/Eklavya_Drone/main/include/DShotRMT.h:37:23: error: field '_rmtChannel' has incomplete type 'rmt_channel_t'
+   37 |         rmt_channel_t _rmtChannel;
+      |                       ^~~~~~~~~~~
+In file included from C:/Espressif/frameworks/esp-idf-v5.1.2/components/driver/rmt/include/driver/rmt_common.h:11,
+                 from C:/Espressif/frameworks/esp-idf-v5.1.2/components/driver/rmt/include/driver/rmt_tx.h:12,
+                 from C:/Users/ameya/Desktop/Eklavya_Drone/main/include/DShotRMT.h:4:
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/driver/rmt/include/driver/rmt_types.h:22:16: note: forward declaration of 'struct rmt_channel_t'
+   22 | typedef struct rmt_channel_t *rmt_channel_handle_t;
+      |                ^~~~~~~~~~~~~
+In file included from C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_hw_support/include/esp_intr_alloc.h:11,
+                 from C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_hw_support/include/esp_cpu.h:20,
+                 from C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_hw_support/include/spinlock.h:11,
+                 from C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:74,
+                 from C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/portable.h:59,
+                 from C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/FreeRTOS.h:71,
+                 from C:/Users/ameya/Desktop/Eklavya_Drone/main/main.cpp:1:
+C:/Users/ameya/Desktop/Eklavya_Drone/main/main.cpp: In function 'void app_main()':
+C:/Users/ameya/Desktop/Eklavya_Drone/main/main.cpp:12:27: error: 'RMT_CHANNEL_0' was not declared in this scope
+   12 | #define DSHOT_RMT_CHANNEL RMT_CHANNEL_0
+      |                           ^~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_common/include/esp_err.h:117:30: note: in definition of macro 'ESP_ERROR_CHECK'
+  117 |         esp_err_t err_rc_ = (x);                                        \
+      |                              ^
+C:/Users/ameya/Desktop/Eklavya_Drone/main/main.cpp:36:45: note: in expansion of macro 'DSHOT_RMT_CHANNEL'
+   36 |     ESP_ERROR_CHECK(esc.install(DSHOT_GPIO, DSHOT_RMT_CHANNEL));
+      |                                             ^~~~~~~~~~~~~~~~~
+[3/9] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/DShotRMT.cpp.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/DShotRMT.cpp.obj 
+ccache C:\Espressif\tools\xtensa-esp32-elf\esp-12.2.0_20230208\xtensa-esp32-elf\bin\xtensa-esp32-elf-g++.exe -DESP_PLATFORM -DIDF_VER=\"v5.1.2-dirty\" -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DUNITY_INCLUDE_CONFIG_H -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -IC:/Users/ameya/Desktop/Eklavya_Drone/build/config -IC:/Users/ameya/Desktop/Eklavya_Drone/main/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/newlib/platform_include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/esp_additions/include/freertos -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/esp_additions/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/esp_additions/arch/xtensa/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_hw_support/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_hw_support/include/soc -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_hw_support/include/soc/esp32 -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_hw_support/port/esp32/. -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_hw_support/port/esp32/private_include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/heap/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/log/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/soc/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/soc/esp32 -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/soc/esp32/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/hal/esp32/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/hal/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/hal/platform_port/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_rom/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_rom/include/esp32 -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_rom/esp32 -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_common/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/port/soc -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/port/include/private -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/xtensa/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/xtensa/esp32/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/lwip/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/lwip/include/apps -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/lwip/include/apps/sntp -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/lwip/lwip/src/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/lwip/port/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/lwip/port/freertos/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/lwip/port/esp32xx/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/lwip/port/esp32xx/include/arch -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_ringbuf/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/efuse/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/efuse/esp32/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/driver/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/driver/deprecated -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/driver/analog_comparator/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/driver/dac/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/driver/gpio/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/driver/gptimer/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/driver/i2c/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/driver/i2s/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/driver/ledc/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/driver/mcpwm/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/driver/parlio/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/driver/pcnt/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/driver/rmt/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/driver/sdio_slave/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/driver/sdmmc/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/driver/sigma_delta/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/driver/spi/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/driver/temperature_sensor/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/driver/touch_sensor/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/driver/twai/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/driver/uart/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/driver/usb_serial_jtag/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/driver/touch_sensor/esp32/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_pm/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/mbedtls/port/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/mbedtls/mbedtls/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/mbedtls/mbedtls/library -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/mbedtls/esp_crt_bundle/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/mbedtls/mbedtls/3rdparty/everest/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/mbedtls/mbedtls/3rdparty/p256-m -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/mbedtls/mbedtls/3rdparty/p256-m/p256-m -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_app_format/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/bootloader_support/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/bootloader_support/bootloader_flash/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_partition/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/app_update/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_mm/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/spi_flash/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/pthread/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_timer/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/app_trace/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_event/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/nvs_flash/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_phy/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_phy/esp32/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/vfs/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_netif/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/wpa_supplicant/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/wpa_supplicant/port/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/wpa_supplicant/esp_supplicant/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_coex/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_wifi/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_wifi/wifi_apps/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/unity/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/unity/unity/src -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/cmock/CMock/src -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/console -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/http_parser -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp-tls -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp-tls/esp-tls-crypto -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_adc/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_adc/interface -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_adc/esp32/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_adc/deprecated/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_eth/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_gdbstub/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_hid/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/tcp_transport/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_http_client/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_http_server/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_https_ota/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_psram/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_lcd/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_lcd/interface -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/protobuf-c/protobuf-c -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/protocomm/include/common -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/protocomm/include/security -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/protocomm/include/transports -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_local_ctrl/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/espcoredump/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/espcoredump/include/port/xtensa -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/wear_levelling/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/sdmmc/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/fatfs/diskio -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/fatfs/vfs -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/fatfs/src -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/idf_test/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/idf_test/include/esp32 -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/ieee802154/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/json/cJSON -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/mqtt/esp-mqtt/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/perfmon/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/spiffs/include -IC:/Espressif/frameworks/esp-idf-v5.1.2/components/wifi_provisioning/include -mlongcalls -Wno-frame-address  -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fmacro-prefix-map=C:/Users/ameya/Desktop/Eklavya_Drone=. -fmacro-prefix-map=C:/Espressif/frameworks/esp-idf-v5.1.2=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -DconfigENABLE_FREERTOS_DEBUG_OCDAWARE=1 -std=gnu++2b -fno-exceptions -fno-rtti -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/DShotRMT.cpp.obj -MF esp-idf\main\CMakeFiles\__idf_main.dir\DShotRMT.cpp.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/DShotRMT.cpp.obj -c C:/Users/ameya/Desktop/Eklavya_Drone/main/DShotRMT.cpp
+In file included from C:/Users/ameya/Desktop/Eklavya_Drone/main/DShotRMT.cpp:2:
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:40:6: error: #error "include FreeRTOS.h must appear in source files before include task.h"
+   40 |     #error "include FreeRTOS.h must appear in source files before include task.h"
+      |      ^~~~~
+In file included from C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:43:
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/list.h:67:6: error: #error "FreeRTOS.h must be included before list.h"
+   67 |     #error "FreeRTOS.h must be included before list.h"
+      |      ^~~~~
+In file included from C:/Users/ameya/Desktop/Eklavya_Drone/main/DShotRMT.cpp:1:
+C:/Users/ameya/Desktop/Eklavya_Drone/main/include/DShotRMT.h:33:60: error: 'TickType_t' has not been declared
+   33 |         esp_err_t repeatPacketTicks(dshot_packet_t packet, TickType_t ticks);
+      |                                                            ^~~~~~~~~~
+C:/Users/ameya/Desktop/Eklavya_Drone/main/include/DShotRMT.h:36:9: error: 'rmt_item32_t' does not name a type
+   36 |         rmt_item32_t _dshotCmd[17];
+      |         ^~~~~~~~~~~~
+C:/Users/ameya/Desktop/Eklavya_Drone/main/include/DShotRMT.h:37:23: error: field '_rmtChannel' has incomplete type 'rmt_channel_t'
+   37 |         rmt_channel_t _rmtChannel;
+      |                       ^~~~~~~~~~~
+In file included from C:/Espressif/frameworks/esp-idf-v5.1.2/components/driver/rmt/include/driver/rmt_common.h:11,
+                 from C:/Espressif/frameworks/esp-idf-v5.1.2/components/driver/rmt/include/driver/rmt_tx.h:12,
+                 from C:/Users/ameya/Desktop/Eklavya_Drone/main/include/DShotRMT.h:4:
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/driver/rmt/include/driver/rmt_types.h:22:16: note: forward declaration of 'struct rmt_channel_t'
+   22 | typedef struct rmt_channel_t *rmt_channel_handle_t;
+      |                ^~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/list.h:152:25: error: 'TickType_t' does not name a type
+  152 |     configLIST_VOLATILE TickType_t xItemValue;              /*< The value being listed.  In most cases this is used to sort the list in descending order. */
+      |                         ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/list.h:164:25: error: 'TickType_t' does not name a type
+  164 |     configLIST_VOLATILE TickType_t xItemValue;
+      |                         ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/list.h:176:14: error: 'UBaseType_t' does not name a type
+  176 |     volatile UBaseType_t uxNumberOfItems;
+      |              ^~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/list.h:354:47: error: expected initializer before 'PRIVILEGED_FUNCTION'
+  354 | void vListInitialise( List_t * const pxList ) PRIVILEGED_FUNCTION;
+      |                                               ^~~~~~~~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/list.h:365:55: error: expected initializer before 'PRIVILEGED_FUNCTION'
+  365 | void vListInitialiseItem( ListItem_t * const pxItem ) PRIVILEGED_FUNCTION;
+      |                                                       ^~~~~~~~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/list.h:379:54: error: expected initializer before 'PRIVILEGED_FUNCTION'
+  379 |                   ListItem_t * const pxNewListItem ) PRIVILEGED_FUNCTION;
+      |                                                      ^~~~~~~~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/list.h:401:57: error: expected initializer before 'PRIVILEGED_FUNCTION'
+  401 |                      ListItem_t * const pxNewListItem ) PRIVILEGED_FUNCTION;
+      |                                                         ^~~~~~~~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/list.h:416:1: error: 'UBaseType_t' does not name a type
+  416 | UBaseType_t uxListRemove( ListItem_t * const pxItemToRemove ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:96:9: error: ISO C++ forbids declaration of 'BaseType_t' with no type [-fpermissive]
+   96 | typedef BaseType_t (* TaskHookFunction_t)( void * );
+      |         ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:96:9: error: typedef 'BaseType_t' is initialized (use 'decltype' instead)
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:96:23: error: 'TaskHookFunction_t' was not declared in this scope
+   96 | typedef BaseType_t (* TaskHookFunction_t)( void * );
+      |                       ^~~~~~~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:126:5: error: 'BaseType_t' does not name a type
+  126 |     BaseType_t xOverflowCount;
+      |     ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:127:5: error: 'TickType_t' does not name a type
+  127 |     TickType_t xTimeOnEntering;
+      |     ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:145:5: error: 'TaskFunction_t' does not name a type
+  145 |     TaskFunction_t pvTaskCode;
+      |     ^~~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:147:5: error: 'configSTACK_DEPTH_TYPE' does not name a type
+  147 |     configSTACK_DEPTH_TYPE usStackDepth;
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:149:5: error: 'UBaseType_t' does not name a type
+  149 |     UBaseType_t uxPriority;
+      |     ^~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:150:5: error: 'StackType_t' does not name a type
+  150 |     StackType_t * puxStackBuffer;
+      |     ^~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:151:30: error: 'portNUM_CONFIGURABLE_REGIONS' was not declared in this scope
+  151 |     MemoryRegion_t xRegions[ portNUM_CONFIGURABLE_REGIONS ];
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:163:5: error: 'UBaseType_t' does not name a type
+  163 |     UBaseType_t xTaskNumber;                         /* A number unique to the task. */
+      |     ^~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:165:5: error: 'UBaseType_t' does not name a type
+  165 |     UBaseType_t uxCurrentPriority;                   /* The priority at which the task was running (may be inherited) when the structure was populated. */
+      |     ^~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:166:5: error: 'UBaseType_t' does not name a type
+  166 |     UBaseType_t uxBasePriority;                      /* The priority to which the task will return if the task's current priority has been inherited to avoid unbounded priority inversion when obtaining a mutex.  Only valid if configUSE_MUTEXES is defined as 1 in FreeRTOSConfig.h. */
+      |     ^~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:168:5: error: 'StackType_t' does not name a type
+  168 |     StackType_t * pxStackBase;                       /* Points to the lowest address of the task's stack area. */
+      |     ^~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:169:5: error: 'configSTACK_DEPTH_TYPE' does not name a type
+  169 |     configSTACK_DEPTH_TYPE usStackHighWaterMark;     /* The minimum amount of stack space that has remained for the task since the task was created.  The closer this value is to zero the closer the task has come to overflowing its stack. */
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:952:72: error: expected initializer before 'PRIVILEGED_FUNCTION'
+  952 |                               const MemoryRegion_t * const pxRegions ) PRIVILEGED_FUNCTION;
+      |                                                                        ^~~~~~~~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:999:48: error: expected initializer before 'PRIVILEGED_FUNCTION'
+  999 | void vTaskDelete( TaskHandle_t xTaskToDelete ) PRIVILEGED_FUNCTION;
+      |                                                ^~~~~~~~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1058:24: error: 'TickType_t' does not name a type
+ 1058 | void vTaskDelay( const TickType_t xTicksToDelay ) PRIVILEGED_FUNCTION;
+      |                        ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1058:51: error: expected initializer before 'PRIVILEGED_FUNCTION'
+ 1058 | void vTaskDelay( const TickType_t xTicksToDelay ) PRIVILEGED_FUNCTION;
+      |                                                   ^~~~~~~~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1129:1: error: 'BaseType_t' does not name a type
+ 1129 | BaseType_t xTaskDelayUntil( TickType_t * const pxPreviousWakeTime,
+      | ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1176:1: error: 'BaseType_t' does not name a type
+ 1176 | BaseType_t xTaskAbortDelay( TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1229:1: error: 'UBaseType_t' does not name a type
+ 1229 | UBaseType_t uxTaskPriorityGet( const TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1241:1: error: 'UBaseType_t' does not name a type
+ 1241 | UBaseType_t uxTaskPriorityGetFromISR( const TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1263:48: error: expected initializer before 'PRIVILEGED_FUNCTION'
+ 1263 | eTaskState eTaskGetState( TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      |                                                ^~~~~~~~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1327:20: error: 'BaseType_t' has not been declared
+ 1327 |                    BaseType_t xGetFreeStackSpace,
+      |                    ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1328:40: error: expected initializer before 'PRIVILEGED_FUNCTION'
+ 1328 |                    eTaskState eState ) PRIVILEGED_FUNCTION;
+      |                                        ^~~~~~~~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1377:24: error: 'UBaseType_t' has not been declared
+ 1377 |                        UBaseType_t uxNewPriority ) PRIVILEGED_FUNCTION;
+      |                        ^~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1377:52: error: expected initializer before 'PRIVILEGED_FUNCTION'
+ 1377 |                        UBaseType_t uxNewPriority ) PRIVILEGED_FUNCTION;
+      |                                                    ^~~~~~~~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1434:50: error: expected initializer before 'PRIVILEGED_FUNCTION'
+ 1434 | void vTaskSuspend( TaskHandle_t xTaskToSuspend ) PRIVILEGED_FUNCTION;
+      |                                                  ^~~~~~~~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1489:48: error: expected initializer before 'PRIVILEGED_FUNCTION'
+ 1489 | void vTaskResume( TaskHandle_t xTaskToResume ) PRIVILEGED_FUNCTION;
+      |                                                ^~~~~~~~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1524:1: error: 'BaseType_t' does not name a type
+ 1524 | BaseType_t xTaskResumeFromISR( TaskHandle_t xTaskToResume ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1568:34: error: expected initializer before 'PRIVILEGED_FUNCTION'
+ 1568 | void vTaskStartScheduler( void ) PRIVILEGED_FUNCTION;
+      |                                  ^~~~~~~~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1630:32: error: expected initializer before 'PRIVILEGED_FUNCTION'
+ 1630 | void vTaskEndScheduler( void ) PRIVILEGED_FUNCTION;
+      |                                ^~~~~~~~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1689:30: error: expected initializer before 'PRIVILEGED_FUNCTION'
+ 1689 | void vTaskSuspendAll( void ) PRIVILEGED_FUNCTION;
+      |                              ^~~~~~~~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1749:1: error: 'BaseType_t' does not name a type
+ 1749 | BaseType_t xTaskResumeAll( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1770:1: error: 'TickType_t' does not name a type
+ 1770 | TickType_t xTaskGetTickCount( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1792:1: error: 'TickType_t' does not name a type
+ 1792 | TickType_t xTaskGetTickCountFromISR( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1812:1: error: 'UBaseType_t' does not name a type
+ 1812 | UBaseType_t uxTaskGetNumberOfTasks( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1831:51: error: expected initializer before 'PRIVILEGED_FUNCTION'
+ 1831 | char * pcTaskGetName( TaskHandle_t xTaskToQuery ) PRIVILEGED_FUNCTION;     /*lint !e971 Unqualified char types are allowed for strings and single characters only. */
+      |                                                   ^~~~~~~~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1853:59: error: expected initializer before 'PRIVILEGED_FUNCTION'
+ 1853 | TaskHandle_t xTaskGetHandle( const char * pcNameToQuery ) PRIVILEGED_FUNCTION;     /*lint !e971 Unqualified char types are allowed for strings and single characters only. */
+      |                                                           ^~~~~~~~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1918:1: error: 'UBaseType_t' does not name a type
+ 1918 | UBaseType_t uxTaskGetStackHighWaterMark( TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1951:1: error: 'configSTACK_DEPTH_TYPE' does not name a type
+ 1951 | configSTACK_DEPTH_TYPE uxTaskGetStackHighWaterMark2( TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1966:53: error: expected initializer before 'PRIVILEGED_FUNCTION'
+ 1966 | uint8_t * pxTaskGetStackStart( TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      |                                                     ^~~~~~~~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2168:1: error: 'BaseType_t' does not name a type
+ 2168 | BaseType_t xTaskCallApplicationTaskHook( TaskHandle_t xTask,
+      | ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2178:45: error: expected initializer before 'PRIVILEGED_FUNCTION'
+ 2178 | TaskHandle_t xTaskGetIdleTaskHandle( void ) PRIVILEGED_FUNCTION;
+      |                                             ^~~~~~~~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2277:1: error: 'UBaseType_t' does not name a type
+ 2277 | UBaseType_t uxTaskGetSystemState( TaskStatus_t * const pxTaskStatusArray,
+      | ^~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2334:40: error: expected initializer before 'PRIVILEGED_FUNCTION'
+ 2334 | void vTaskList( char * pcWriteBuffer ) PRIVILEGED_FUNCTION;     /*lint !e971 Unqualified char types are allowed for strings and single characters only. */
+      |                                        ^~~~~~~~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2396:51: error: expected initializer before 'PRIVILEGED_FUNCTION'
+ 2396 | void vTaskGetRunTimeStats( char * pcWriteBuffer ) PRIVILEGED_FUNCTION;     /*lint !e971 Unqualified char types are allowed for strings and single characters only. */
+      |                                                   ^~~~~~~~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2432:46: error: expected initializer before 'PRIVILEGED_FUNCTION'
+ 2432 | uint32_t ulTaskGetIdleRunTimeCounter( void ) PRIVILEGED_FUNCTION;
+      |                                              ^~~~~~~~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2547:1: error: 'BaseType_t' does not name a type
+ 2547 | BaseType_t xTaskGenericNotify( TaskHandle_t xTaskToNotify,
+      | ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2711:1: error: 'BaseType_t' does not name a type
+ 2711 | BaseType_t xTaskGenericNotifyFromISR( TaskHandle_t xTaskToNotify,
+      | ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2864:1: error: 'BaseType_t' does not name a type
+ 2864 | BaseType_t xTaskGenericNotifyWait( UBaseType_t uxIndexToWaitOn,
+      | ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3039:37: error: 'UBaseType_t' has not been declared
+ 3039 |                                     UBaseType_t uxIndexToNotify,
+      |                                     ^~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3040:37: error: 'BaseType_t' has not been declared
+ 3040 |                                     BaseType_t * pxHigherPriorityTaskWoken ) PRIVILEGED_FUNCTION;
+      |                                     ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3040:78: error: expected initializer before 'PRIVILEGED_FUNCTION'
+ 3040 |                                     BaseType_t * pxHigherPriorityTaskWoken ) PRIVILEGED_FUNCTION;
+      |                                                                              ^~~~~~~~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3148:35: error: 'UBaseType_t' was not declared in this scope
+ 3148 | uint32_t ulTaskGenericNotifyTake( UBaseType_t uxIndexToWaitOn,
+      |                                   ^~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3149:35: error: 'BaseType_t' was not declared in this scope
+ 3149 |                                   BaseType_t xClearCountOnExit,
+      |                                   ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3150:35: error: 'TickType_t' was not declared in this scope
+ 3150 |                                   TickType_t xTicksToWait ) PRIVILEGED_FUNCTION;
+      |                                   ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3150:59: error: expression list treated as compound expression in initializer [-fpermissive]
+ 3150 |                                   TickType_t xTicksToWait ) PRIVILEGED_FUNCTION;
+      |                                                           ^
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3217:1: error: 'BaseType_t' does not name a type
+ 3217 | BaseType_t xTaskGenericNotifyStateClear( TaskHandle_t xTask,
+      | ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3287:41: error: 'UBaseType_t' has not been declared
+ 3287 |                                         UBaseType_t uxIndexToClear,
+      |                                         ^~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3288:66: error: expected initializer before 'PRIVILEGED_FUNCTION'
+ 3288 |                                         uint32_t ulBitsToClear ) PRIVILEGED_FUNCTION;
+      |                                                                  ^~~~~~~~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3312:58: error: expected initializer before 'PRIVILEGED_FUNCTION'
+ 3312 | void vTaskSetTimeOutState( TimeOut_t * const pxTimeOut ) PRIVILEGED_FUNCTION;
+      |                                                          ^~~~~~~~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3401:1: error: 'BaseType_t' does not name a type
+ 3401 | BaseType_t xTaskCheckForTimeOut( TimeOut_t * const pxTimeOut,
+      | ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3434:1: error: 'BaseType_t' does not name a type
+ 3434 | BaseType_t xTaskCatchUpTicks( TickType_t xTicksToCatchUp ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3474:47: error: 'BaseType_t' was not declared in this scope
+ 3474 | TaskHandle_t xTaskGetCurrentTaskHandleForCPU( BaseType_t cpuid );
+      |                                               ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3487:44: error: 'UBaseType_t' was not declared in this scope
+ 3487 | TaskHandle_t xTaskGetIdleTaskHandleForCPU( UBaseType_t cpuid );
+      |                                            ^~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3492:1: error: 'BaseType_t' does not name a type
+ 3492 | BaseType_t xTaskGetAffinity( TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3512:1: error: 'BaseType_t' does not name a type
+ 3512 | BaseType_t xTaskIncrementTick( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3560:35: error: 'TickType_t' does not name a type
+ 3560 |                             const TickType_t xTicksToWait ) PRIVILEGED_FUNCTION;
+      |                                   ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3560:61: error: expected initializer before 'PRIVILEGED_FUNCTION'
+ 3560 |                             const TickType_t xTicksToWait ) PRIVILEGED_FUNCTION;
+      |                                                             ^~~~~~~~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3562:44: error: 'TickType_t' does not name a type
+ 3562 |                                      const TickType_t xItemValue,
+      |                                            ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3563:44: error: 'TickType_t' does not name a type
+ 3563 |                                      const TickType_t xTicksToWait ) PRIVILEGED_FUNCTION;
+      |                                            ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3563:70: error: expected initializer before 'PRIVILEGED_FUNCTION'
+ 3563 |                                      const TickType_t xTicksToWait ) PRIVILEGED_FUNCTION;
+      |                                                                      ^~~~~~~~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3577:39: error: 'TickType_t' has not been declared
+ 3577 |                                       TickType_t xTicksToWait,
+      |                                       ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3578:45: error: 'BaseType_t' does not name a type
+ 3578 |                                       const BaseType_t xWaitIndefinitely ) PRIVILEGED_FUNCTION;
+      |                                             ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3578:76: error: expected initializer before 'PRIVILEGED_FUNCTION'
+ 3578 |                                       const BaseType_t xWaitIndefinitely ) PRIVILEGED_FUNCTION;
+      |                                                                            ^~~~~~~~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3624:1: error: 'BaseType_t' does not name a type
+ 3624 | BaseType_t xTaskRemoveFromEventList( const List_t * const pxEventList ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3626:47: error: 'TickType_t' does not name a type
+ 3626 |                                         const TickType_t xItemValue ) PRIVILEGED_FUNCTION;
+      |                                               ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3626:71: error: expected initializer before 'PRIVILEGED_FUNCTION'
+ 3626 |                                         const TickType_t xItemValue ) PRIVILEGED_FUNCTION;
+      |                                                                       ^~~~~~~~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3636:1: error: 'portDONT_DISCARD' does not name a type
+ 3636 | portDONT_DISCARD void vTaskSwitchContext( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3642:1: error: 'TickType_t' does not name a type
+ 3642 | TickType_t uxTaskResetEventItemValue( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3647:48: error: expected initializer before 'PRIVILEGED_FUNCTION'
+ 3647 | TaskHandle_t xTaskGetCurrentTaskHandle( void ) PRIVILEGED_FUNCTION;
+      |                                                ^~~~~~~~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3653:31: error: expected initializer before 'PRIVILEGED_FUNCTION'
+ 3653 | void vTaskMissedYield( void ) PRIVILEGED_FUNCTION;
+      |                               ^~~~~~~~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3659:1: error: 'BaseType_t' does not name a type
+ 3659 | BaseType_t xTaskGetSchedulerState( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3665:1: error: 'BaseType_t' does not name a type
+ 3665 | BaseType_t xTaskPriorityInherit( TaskHandle_t const pxMutexHolder ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3671:1: error: 'BaseType_t' does not name a type
+ 3671 | BaseType_t xTaskPriorityDisinherit( TaskHandle_t const pxMutexHolder ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3682:43: error: 'UBaseType_t' has not been declared
+ 3682 |                                           UBaseType_t uxHighestPriorityWaitingTask ) PRIVILEGED_FUNCTION;
+      |                                           ^~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3682:86: error: expected initializer before 'PRIVILEGED_FUNCTION'
+ 3682 |                                           UBaseType_t uxHighestPriorityWaitingTask ) PRIVILEGED_FUNCTION;
+      |                                                                                      ^~~~~~~~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3687:1: error: 'UBaseType_t' does not name a type
+ 3687 | UBaseType_t uxTaskGetTaskNumber( TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3694:32: error: 'UBaseType_t' does not name a type
+ 3694 |                          const UBaseType_t uxHandle ) PRIVILEGED_FUNCTION;
+      |                                ^~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3694:55: error: expected initializer before 'PRIVILEGED_FUNCTION'
+ 3694 |                          const UBaseType_t uxHandle ) PRIVILEGED_FUNCTION;
+      |                                                       ^~~~~~~~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3704:27: error: 'TickType_t' does not name a type
+ 3704 | void vTaskStepTick( const TickType_t xTicksToJump ) PRIVILEGED_FUNCTION;
+      |                           ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3704:53: error: expected initializer before 'PRIVILEGED_FUNCTION'
+ 3704 | void vTaskStepTick( const TickType_t xTicksToJump ) PRIVILEGED_FUNCTION;
+      |                                                     ^~~~~~~~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3720:54: error: expected initializer before 'PRIVILEGED_FUNCTION'
+ 3720 | eSleepModeStatus eTaskConfirmSleepModeStatus( void ) PRIVILEGED_FUNCTION;
+      |                                                      ^~~~~~~~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3726:52: error: expected initializer before 'PRIVILEGED_FUNCTION'
+ 3726 | TaskHandle_t pvTaskIncrementMutexHeldCount( void ) PRIVILEGED_FUNCTION;
+      |                                                    ^~~~~~~~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3732:66: error: expected initializer before 'PRIVILEGED_FUNCTION'
+ 3732 | void vTaskInternalSetTimeOutState( TimeOut_t * const pxTimeOut ) PRIVILEGED_FUNCTION;
+      |                                                                  ^~~~~~~~~~~~~~~~~~~
+C:/Users/ameya/Desktop/Eklavya_Drone/main/DShotRMT.cpp: In constructor 'DShotRMT::DShotRMT()':
+C:/Users/ameya/Desktop/Eklavya_Drone/main/DShotRMT.cpp:69:9: error: '_dshotCmd' was not declared in this scope
+   69 |         _dshotCmd[16].duration0 = DSHOT_PAUSE;
+      |         ^~~~~~~~~
+C:/Users/ameya/Desktop/Eklavya_Drone/main/DShotRMT.cpp: At global scope:
+C:/Users/ameya/Desktop/Eklavya_Drone/main/DShotRMT.cpp:80:60: error: 'rmtChannel' has incomplete type
+   80 | esp_err_t DShotRMT::install(gpio_num_t gpio, rmt_channel_t rmtChannel)
+      |                                              ~~~~~~~~~~~~~~^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/driver/rmt/include/driver/rmt_types.h:22:16: note: forward declaration of 'struct rmt_channel_t'
+   22 | typedef struct rmt_channel_t *rmt_channel_handle_t;
+      |                ^~~~~~~~~~~~~
+C:/Users/ameya/Desktop/Eklavya_Drone/main/DShotRMT.cpp: In member function 'esp_err_t DShotRMT::install(gpio_num_t, rmt_channel_t)':
+C:/Users/ameya/Desktop/Eklavya_Drone/main/DShotRMT.cpp:84:9: error: 'rmt_config_t' was not declared in this scope
+   84 |         rmt_config_t config;
+      |         ^~~~~~~~~~~~
+C:/Users/ameya/Desktop/Eklavya_Drone/main/DShotRMT.cpp:86:9: error: 'config' was not declared in this scope
+   86 |         config.channel = rmtChannel;
+      |         ^~~~~~
+C:/Users/ameya/Desktop/Eklavya_Drone/main/DShotRMT.cpp:87:27: error: 'RMT_MODE_TX' was not declared in this scope
+   87 |         config.rmt_mode = RMT_MODE_TX;
+      |                           ^~~~~~~~~~~
+C:/Users/ameya/Desktop/Eklavya_Drone/main/DShotRMT.cpp:94:39: error: 'RMT_IDLE_LEVEL_LOW' was not declared in this scope
+   94 |         config.tx_config.idle_level = RMT_IDLE_LEVEL_LOW;
+      |                                       ^~~~~~~~~~~~~~~~~~
+C:/Users/ameya/Desktop/Eklavya_Drone/main/DShotRMT.cpp:97:27: error: 'rmt_config' was not declared in this scope
+   97 |         DSHOT_ERROR_CHECK(rmt_config(&config));
+      |                           ^~~~~~~~~~
+C:/Users/ameya/Desktop/Eklavya_Drone/main/DShotRMT.cpp:10:27: note: in definition of macro 'DSHOT_ERROR_CHECK'
+   10 |         esp_err_t __ret = x;               \
+      |                           ^
+C:/Users/ameya/Desktop/Eklavya_Drone/main/DShotRMT.cpp:99:16: error: 'rmt_driver_install' was not declared in this scope
+   99 |         return rmt_driver_install(rmtChannel, 0, 0);
+      |                ^~~~~~~~~~~~~~~~~~
+C:/Users/ameya/Desktop/Eklavya_Drone/main/DShotRMT.cpp: In member function 'esp_err_t DShotRMT::init(bool)':
+C:/Users/ameya/Desktop/Eklavya_Drone/main/DShotRMT.cpp:61:33: error: 'portTICK_PERIOD_MS' was not declared in this scope
+   61 | #define DSHOT_ARM_DELAY (5000 / portTICK_PERIOD_MS)
+      |                                 ^~~~~~~~~~~~~~~~~~
+C:/Users/ameya/Desktop/Eklavya_Drone/main/DShotRMT.cpp:10:27: note: in definition of macro 'DSHOT_ERROR_CHECK'
+   10 |         esp_err_t __ret = x;               \
+      |                           ^
+C:/Users/ameya/Desktop/Eklavya_Drone/main/DShotRMT.cpp:118:78: note: in expansion of macro 'DSHOT_ARM_DELAY'
+  118 |                 DSHOT_ERROR_CHECK(repeatPacketTicks({DSHOT_THROTTLE_MIN, 0}, DSHOT_ARM_DELAY));
+      |                                                                              ^~~~~~~~~~~~~~~
+C:/Users/ameya/Desktop/Eklavya_Drone/main/DShotRMT.cpp: In member function 'esp_err_t DShotRMT::setReversed(bool)':
+C:/Users/ameya/Desktop/Eklavya_Drone/main/DShotRMT.cpp:136:27: error: 'rmt_wait_tx_done' was not declared in this scope; did you mean 'rmt_tx_wait_all_done'?
+  136 |         DSHOT_ERROR_CHECK(rmt_wait_tx_done(_rmtChannel, 1));
+      |                           ^~~~~~~~~~~~~~~~
+C:/Users/ameya/Desktop/Eklavya_Drone/main/DShotRMT.cpp:10:27: note: in definition of macro 'DSHOT_ERROR_CHECK'
+   10 |         esp_err_t __ret = x;               \
+      |                           ^
+C:/Users/ameya/Desktop/Eklavya_Drone/main/DShotRMT.cpp:137:76: error: 'portTICK_PERIOD_MS' was not declared in this scope
+  137 |         DSHOT_ERROR_CHECK(repeatPacketTicks({DSHOT_THROTTLE_MIN, 0}, 200 / portTICK_PERIOD_MS));
+      |                                                                            ^~~~~~~~~~~~~~~~~~
+C:/Users/ameya/Desktop/Eklavya_Drone/main/DShotRMT.cpp:10:27: note: in definition of macro 'DSHOT_ERROR_CHECK'
+   10 |         esp_err_t __ret = x;               \
+      |                           ^
+C:/Users/ameya/Desktop/Eklavya_Drone/main/DShotRMT.cpp: In member function 'esp_err_t DShotRMT::beep()':
+C:/Users/ameya/Desktop/Eklavya_Drone/main/DShotRMT.cpp:147:26: error: 'portTICK_PERIOD_MS' was not declared in this scope
+  147 |         vTaskDelay(260 / portTICK_PERIOD_MS);
+      |                          ^~~~~~~~~~~~~~~~~~
+C:/Users/ameya/Desktop/Eklavya_Drone/main/DShotRMT.cpp:147:9: error: 'vTaskDelay' was not declared in this scope; did you mean 'vTaskDelayUntil'?
+  147 |         vTaskDelay(260 / portTICK_PERIOD_MS);
+      |         ^~~~~~~~~~
+      |         vTaskDelayUntil
+C:/Users/ameya/Desktop/Eklavya_Drone/main/DShotRMT.cpp: In member function 'void DShotRMT::setData(uint16_t)':
+C:/Users/ameya/Desktop/Eklavya_Drone/main/DShotRMT.cpp:158:25: error: '_dshotCmd' was not declared in this scope
+  158 |                         _dshotCmd[i].duration0 = DSHOT_T1H;
+      |                         ^~~~~~~~~
+C:/Users/ameya/Desktop/Eklavya_Drone/main/DShotRMT.cpp:166:25: error: '_dshotCmd' was not declared in this scope
+  166 |                         _dshotCmd[i].duration0 = DSHOT_T0H;
+      |                         ^~~~~~~~~
+C:/Users/ameya/Desktop/Eklavya_Drone/main/DShotRMT.cpp: In member function 'esp_err_t DShotRMT::writeData(uint16_t, bool)':
+C:/Users/ameya/Desktop/Eklavya_Drone/main/DShotRMT.cpp:189:27: error: 'rmt_wait_tx_done' was not declared in this scope; did you mean 'rmt_tx_wait_all_done'?
+  189 |         DSHOT_ERROR_CHECK(rmt_wait_tx_done(_rmtChannel, 0));
+      |                           ^~~~~~~~~~~~~~~~
+C:/Users/ameya/Desktop/Eklavya_Drone/main/DShotRMT.cpp:10:27: note: in definition of macro 'DSHOT_ERROR_CHECK'
+   10 |         esp_err_t __ret = x;               \
+      |                           ^
+C:/Users/ameya/Desktop/Eklavya_Drone/main/DShotRMT.cpp:194:52: error: '_dshotCmd' was not declared in this scope
+  194 |                                                    _dshotCmd, RMT_CMD_SIZE,
+      |                                                    ^~~~~~~~~
+C:/Users/ameya/Desktop/Eklavya_Drone/main/DShotRMT.cpp:193:16: error: 'rmt_write_items' was not declared in this scope
+  193 |         return rmt_write_items(_rmtChannel,
+      |                ^~~~~~~~~~~~~~~
+C:/Users/ameya/Desktop/Eklavya_Drone/main/DShotRMT.cpp: In member function 'esp_err_t DShotRMT::repeatPacket(dshot_packet_t, int)':
+C:/Users/ameya/Desktop/Eklavya_Drone/main/DShotRMT.cpp:215:17: error: 'portYIELD' was not declared in this scope
+  215 |                 portYIELD();
+      |                 ^~~~~~~~~
+C:/Users/ameya/Desktop/Eklavya_Drone/main/DShotRMT.cpp: At global scope:
+C:/Users/ameya/Desktop/Eklavya_Drone/main/DShotRMT.cpp:220:62: error: 'TickType_t' has not been declared
+  220 | esp_err_t DShotRMT::repeatPacketTicks(dshot_packet_t packet, TickType_t ticks)
+      |                                                              ^~~~~~~~~~
+C:/Users/ameya/Desktop/Eklavya_Drone/main/DShotRMT.cpp: In member function 'esp_err_t DShotRMT::repeatPacketTicks(dshot_packet_t, int)':
+C:/Users/ameya/Desktop/Eklavya_Drone/main/DShotRMT.cpp:222:27: error: 'rmt_wait_tx_done' was not declared in this scope; did you mean 'rmt_tx_wait_all_done'?
+  222 |         DSHOT_ERROR_CHECK(rmt_wait_tx_done(_rmtChannel, ticks));
+      |                           ^~~~~~~~~~~~~~~~
+C:/Users/ameya/Desktop/Eklavya_Drone/main/DShotRMT.cpp:10:27: note: in definition of macro 'DSHOT_ERROR_CHECK'
+   10 |         esp_err_t __ret = x;               \
+      |                           ^
+C:/Users/ameya/Desktop/Eklavya_Drone/main/DShotRMT.cpp:224:9: error: 'TickType_t' was not declared in this scope
+  224 |         TickType_t repeatStop = xTaskGetTickCount() + ticks;
+      |         ^~~~~~~~~~
+C:/Users/ameya/Desktop/Eklavya_Drone/main/DShotRMT.cpp:225:16: error: 'xTaskGetTickCount' was not declared in this scope
+  225 |         while (xTaskGetTickCount() < repeatStop)
+      |                ^~~~~~~~~~~~~~~~~
+C:/Users/ameya/Desktop/Eklavya_Drone/main/DShotRMT.cpp:225:38: error: 'repeatStop' was not declared in this scope
+  225 |         while (xTaskGetTickCount() < repeatStop)
+      |                                      ^~~~~~~~~~
+C:/Users/ameya/Desktop/Eklavya_Drone/main/DShotRMT.cpp:228:17: error: 'vTaskDelay' was not declared in this scope; did you mean 'vTaskDelayUntil'?
+  228 |                 vTaskDelay(1);
+      |                 ^~~~~~~~~~
+      |                 vTaskDelayUntil
+ninja: build stopped: subcommand failed.
